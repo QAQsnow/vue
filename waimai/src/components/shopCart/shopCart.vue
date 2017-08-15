@@ -317,6 +317,11 @@
 		display:table;
 		content:'';
 	}
+	  .food .cartcontrol{
+    position:absolute;
+    top:12px;
+    right:12px;
+  }
 	.logo.active{background-color:rgb(0,160,220);}
 	.logo i{
 		display:inline-block;
