@@ -141,7 +141,7 @@
 		methods:{
 			_init(){
 				//加载后台数据
-				axios.get('../static/data.json').then(res=>{
+				axios.get('static/data.json').then(res=>{
 					this.ratings=res.data.ratings;
 					this.seller=res.data.seller;
 					this._initClassifyArr();

@@ -94,7 +94,7 @@
 		},
 		created(){
 			//请求后台数据
-			axios.get('/static/data.json').then(res=>{
+			axios.get('static/data.json').then(res=>{
 				//取出数据
 				this.seller=res.data.seller;
 				console.log(this.seller);

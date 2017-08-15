@@ -76,7 +76,7 @@
 			'shopCart':shopCart
 		},
 		created(){
-			axios.get("/static/data.json").then(response=>{
+			axios.get("static/data.json").then(response=>{
 				this.goods=response.data.goods;
 				this.$nextTick(()=>{
 					this._initScroll();
@@ -141,6 +141,7 @@
 		      if (!event._constructed) {
 		        return;
 		      }
+		      //点击导航菜单切换到对应的食物区
 		      this.foodsScroll.scrollTo(0, -this.listHeight[index], 300);
 		    },
 			goDetail(food){
